@@ -12,6 +12,8 @@
 */
 
 Route::get('/', function () {return view('welcome');});
+//Route::get('/', function () {return phpinfo();});
+
 Route::get('home', 'HomeController@index');
 
 Route::controllers([
