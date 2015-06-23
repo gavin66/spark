@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'spark_main'),
 
     /*
     |--------------------------------------------------------------------------
@@ -58,43 +58,17 @@ return [
             'strict'    => false,
         ],
 
-        'Dev_spark_main' => [
+        'dev_spark_main' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', '127.0.0.1'),
-            'database'  => env('DB_DATABASE', 'Dev_spark_main'),
+            'host'      => env('DB_HOST', '121.42.158.246'),
+            'database'  => env('DB_DATABASE', 'dev_spark_main'),
             'username'  => env('DB_USERNAME', 'root'),
-            'password'  => env('DB_PASSWORD', '123456'),
+            'password'  => env('DB_PASSWORD', 'Spark654231'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => 'spk_',
             'strict'    => false,
-        ],
-
-//        'sqlite' => [
-//            'driver'   => 'sqlite',
-//            'database' => storage_path('database.sqlite'),
-//            'prefix'   => '',
-//        ],
-//
-//        'pgsql' => [
-//            'driver'   => 'pgsql',
-//            'host'     => env('DB_HOST', 'localhost'),
-//            'database' => env('DB_DATABASE', 'forge'),
-//            'username' => env('DB_USERNAME', 'forge'),
-//            'password' => env('DB_PASSWORD', ''),
-//            'charset'  => 'utf8',
-//            'prefix'   => '',
-//            'schema'   => 'public',
-//        ],
-//
-//        'sqlsrv' => [
-//            'driver'   => 'sqlsrv',
-//            'host'     => env('DB_HOST', 'localhost'),
-//            'database' => env('DB_DATABASE', 'forge'),
-//            'username' => env('DB_USERNAME', 'forge'),
-//            'password' => env('DB_PASSWORD', ''),
-//            'prefix'   => '',
-//        ],
+        ]
 
     ],
 

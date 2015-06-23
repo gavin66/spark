@@ -6,6 +6,18 @@
  * Time: 15:20
  */
 
-class userTableSeeder {
+use Illuminate\Database\Seeder;
+use App\Models\User;
 
+class UserTableSeeder extends Seeder{
+    public function run(){
+        DB::table('user')->delete();
+
+        for($i=0;$i<10;$i++){
+            User::create([
+                'account'=>'account'.$i,
+                'password'=>'password'.$i
+            ]);
+        }
+    }
 }

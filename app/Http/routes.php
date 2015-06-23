@@ -11,12 +11,16 @@
 |
 */
 
-Route::get('/', function () {return view('welcome');});
-//Route::get('/', function () {return phpinfo();});
+//Route::get('/', function () {return view('welcome');});
+Route::get('/', function () {
+//    return
+});
 
-Route::get('home', 'HomeController@index');
 
-Route::controllers([
-    'auth' => 'Auth\AuthController',
-    'password' => 'Auth\PasswordController',
-]);
+Route::get('/phpinfo', function () {return phpinfo();});
+
+
+//Route::controllers([
+//    'auth' => 'Auth\AuthController',
+//    'password' => 'Auth\PasswordController',
+//]);
