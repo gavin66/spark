@@ -14,10 +14,10 @@ class UserTableSeeder extends Seeder{
         DB::table('user')->delete();
 
         for($i=0;$i<10;$i++){
-            User::create([
-                'account'=>'account'.$i,
-                'password'=>'password'.$i
-            ]);
+            User::create(array(
+                'account'=>'accountI'.$i,
+                'password'=>'passwordU'.$i
+            ));
         }
     }
 }

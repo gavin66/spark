@@ -12,10 +12,10 @@
 */
 
 //Route::get('/', function () {return view('welcome');});
-Route::get('/', function () {
-//    return
-});
-
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+Route::get('/','UserController@index');
 
 Route::get('/phpinfo', function () {return phpinfo();});
 
