@@ -19,7 +19,7 @@ Route::get('/','UserController@index');
 
 Route::get('/phpinfo', function () {return phpinfo();});
 
-Route::get('/webinfo', function () {echo '怎么回事';});
+Route::get('/webinfo', function () {echo '怎么回事,我不信!';});
 
 
 //Route::controllers([
